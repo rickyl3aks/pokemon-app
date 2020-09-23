@@ -93,7 +93,7 @@ function App() {
                     .toLowerCase()
                     .includes(filter.toLowerCase())
                 )
-                .slice(0, 20)
+
                 .map((pokemon) => (
                   <PokemonRow
                     pokemon={pokemon}
