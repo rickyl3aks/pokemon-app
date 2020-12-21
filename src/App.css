@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+
+body {
+  font-family: "Caveat Brush", cursive;
+}
+
 .title {
   text-align: center;
 }
@@ -7,8 +13,17 @@ th {
   font-size: x-large;
 }
 
+.pokemon {
+  background-color: red;
+}
+
 input {
   width: 100%;
   font-size: x-large;
   padding: 0.2rem;
+}
+
+.btn {
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
 }

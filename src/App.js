@@ -5,10 +5,12 @@ import pokemon from "./pokemon.json";
 
 const PokemonRow = ({ pokemon, onSelect }) => (
   <tr>
-    <td>{pokemon.name.english}</td>
+    <td className="pokemon">{pokemon.name.english}</td>
     <td>{pokemon.type.join(", ")}</td>
     <td>
-      <button onClick={() => onSelect(pokemon)}>Select!</button>
+      <button onClick={() => onSelect(pokemon)} className="btn">
+        Select
+      </button>
     </td>
   </tr>
 );
