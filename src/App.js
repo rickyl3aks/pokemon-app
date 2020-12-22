@@ -33,7 +33,7 @@ function App() {
                 <th>Type</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody style={{ margin: "auto" }}>
               {window.innerWidth > 600
                 ? pokemon
                     .filter((pokemon) =>
@@ -41,7 +41,7 @@ function App() {
                         .toLowerCase()
                         .includes(filter.toLowerCase())
                     )
-
+                    .slice(0, 20)
                     .map((pokemon) => (
                       <PokemonRow
                         pokemon={pokemon}
