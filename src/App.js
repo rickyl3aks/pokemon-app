@@ -34,7 +34,7 @@ function App() {
               </tr>
             </thead>
             <tbody style={{ margin: "auto" }}>
-              {window.innerWidth > 600
+              {window.innerWidth > 850
                 ? pokemon
                     .filter((pokemon) =>
                       pokemon.name.english
@@ -55,7 +55,7 @@ function App() {
                         .toLowerCase()
                         .includes(filter.toLowerCase())
                     )
-                    .slice(0, 3)
+                    .slice(0, 8)
                     .map((pokemon) => (
                       <PokemonRow
                         pokemon={pokemon}
