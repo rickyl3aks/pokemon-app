@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import CountUp from "react-countup";
 
 const PokemonInfo = ({ name, base }) => (
   <div className="infos">
@@ -9,7 +10,9 @@ const PokemonInfo = ({ name, base }) => (
         {Object.keys(base).map((key) => (
           <tr key={key}>
             <td>{key}</td>
-            <td>{base[key]}</td>
+            <td>
+              <CountUp start={0} end={base[key]} duration={1} separator="," />
+            </td>
           </tr>
         ))}
       </thead>
