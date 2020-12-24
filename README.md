@@ -1,2 +1,3 @@
-<h1>Site 🚧 under construction</h1>
-<p>...sorry for any inconveniece</p>
+<h1>POKEDEX</h1>
+<p>DATA from pokemon.json</p><br/>
+<p>all the pokemon with all their info displayed</p>
